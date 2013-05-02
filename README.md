@@ -1,4 +1,3 @@
-# Scrapybara
 	     _        _
 	    (\\.-""-.//)
 	     /        \    /)     _____                             __                    
@@ -11,7 +10,8 @@
 	(((` ) |----| ( `)))
 	    (((`    `)))
 
-### A modular web scraping framework based on capybara and poltergeist
+# Scrapybara
+### A modular web scraping framework based on [capybara](https://github.com/jnicklas/capybara), [capybara-webkit](https://github.com/thoughtbot/capybara-webkit), and [poltergeist](https://github.com/jonleighton/poltergeist)
 
 ## Features
 
@@ -26,8 +26,8 @@
 * Ruby 1.9/2.0
 * libxml2
 * libxslt
-* Qt (capybara-webkit)
-* PhantomJS (poltergeist)
+* Qt (*capybara-webkit)
+* PhantomJS (*poltergeist)
 
 ## Using Bundler
 
@@ -49,14 +49,14 @@ gem install scrapybara
 
 ### Tutorial
 
-Until this is put into a gem we'll need to run this from the scraper directory as follows:
+**Note** *You'll need to manually load it from irb until this is packaged as a gem. For example:
 
 ```sh
-cd /path/to/financial_docs/scraper
+cd /path/to/scrapybara
 irb -Ilib -rscraper
 ```
 
-You can now access all the libraries inside the IRB shell :
+You can now access the libraries inside IRB:
 
 ```ruby
 scraper = Scraper::Edgar.new
@@ -90,29 +90,30 @@ Generate it:
 
 * better test coverage
 * more field validations of models
+* more plugins
 
 ## Contributing
 
-A lot of new contributors that want to dive in to helping fix bugs and develop new awesome things often ask "Well, where do I start?". Below are some links to comprehensive resources so that newcomers can get up to speed and get dive right in to fixing bugs.
+A lot of new contributors ask "Well, where do I start?". Below are some links to comprehensive resources for newcomers to get up to speed and get dive right in to fixing bugs and adding features.
 
 ### How to Contribute the Right Way
 
-Scrapybara's development tries its very best to stick to a set of guidelines when it comes to contributing code. When you're writing a bugfix or custom code from scratch, it's good practice to ask yourself:
+We try to stick to a set of guidelines when it comes to contributing code. When you're writing a bugfix or custom code from scratch, it's good practice to ask yourself:
 
-* Does my code have [tests](https://github.com/diaspora/diaspora/wiki/Testing-workflow)?
-* Am I sticking to the [Git Workflow](https://github.com/diaspora/diaspora/wiki/Git-Workflow) the best I can?
+* Does my code have [tests](https://github.com/jgrevich/scrapybara/wiki/Testing-workflow)?
+* Am I sticking to the [Git Workflow](https://github.com/jgrevich/scrapybara/wiki/Git-Workflow) the best I can?
 
 ### Other helpful resources
 
-Below are some helpful relevant links to other parts of the wiki. We're currently restructuring everything, so the below links may be subject to change.
+Below are some relevant links to other parts of the wiki. We're currently restructuring everything, so the below links may be subject to change.
 
-* [How to work with Pull Requests](https://github.com/diaspora/diaspora/wiki/Merging-Pull-Requests)
-* [An Overview of Required Ruby Gems](https://github.com/diaspora/diaspora/wiki/Overview-of-required-gems)
-* [How to get a dev environment set up](https://github.com/diaspora/diaspora/wiki/Installing-and-Running-Diaspora)
-* [How to Report a Bug](https://github.com/diaspora/diaspora/wiki/Report-a-bug)
-* [A Detailed Introduction to the Source Code](https://github.com/diaspora/diaspora/wiki/An-Introduction-to-the-Diaspora-Source)
+* [How to work with Pull Requests](https://github.com/jgrevich/scrapybara/wiki/Merging-Pull-Requests)
+* [An Overview of Required Ruby Gems](https://github.com/jgrevich/scrapybara/wiki/Overview-of-Required-Gems)
+* [How to get a dev environment set up](https://github.com/jgrevich/scrapybara/wiki/Installing-and-Running)
+* [How to Report a Bug](https://github.com/jgrevich/scrapybara/wiki/Report-a-Bug)
+* [A Detailed Introduction to the Source Code](https://github.com/jgrevich/scrapybara/wiki/An-Introduction-to-the-Source-Code)
 
-*Thank you Diaspora project for the above links/wikis*
+*Thank you [Diaspora project](https://github.com/diaspora/diaspora) for the basic ideas on how to structure the README and wikis*
 
 ## Ruby Interpreter Compatibility
 
